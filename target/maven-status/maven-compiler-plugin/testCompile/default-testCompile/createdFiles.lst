@@ -1,0 +1,14 @@
+com\amazonaws\handler\DeleteOrderHandlerTest.class
+com\amazonaws\config\DaggerOrderTestComponent$Builder.class
+com\amazonaws\handler\OrderHandlerTestBase_MembersInjector.class
+com\amazonaws\config\DaggerOrderTestComponent$1.class
+com\amazonaws\config\DaggerOrderTestComponent.class
+com\amazonaws\handler\CreateOrderHandlerIT.class
+com\amazonaws\dao\OrderDaoTest.class
+com\amazonaws\handler\GetOrderHandlerTest.class
+com\amazonaws\handler\OrderHandlerTestBase.class
+com\amazonaws\config\OrderTestComponent.class
+com\amazonaws\handler\CreateOrderHandlerTest.class
+com\amazonaws\handler\UpdateOrderHandlerTest.class
+com\amazonaws\services\lambda\runtime\TestContext$TestContextBuilder.class
+com\amazonaws\services\lambda\runtime\TestContext.class
