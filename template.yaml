@@ -8,7 +8,7 @@ Description: >
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
     Function:
-        Timeout: 50
+        Timeout: 150
         MemorySize: 512
         Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
           Variables:
@@ -20,7 +20,7 @@ Resources:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: target/aws-sam-java-rest-1.0.0.jar
-      Handler: com.amazonaws.handler.GetOrderHandler::handleRequest
+      Handler: com.amazon.handler.GetOrderHandler::handleRequest
       Runtime: java8
       Policies:
         - DynamoDBReadPolicy:
@@ -35,7 +35,7 @@ Resources:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: target/aws-sam-java-rest-1.0.0.jar
-      Handler: com.amazonaws.handler.GetOrdersHandler::handleRequest
+      Handler: com.amazon.handler.GetOrdersHandler::handleRequest
       Runtime: java8
       Policies:
         - DynamoDBReadPolicy:
@@ -50,7 +50,7 @@ Resources:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: target/aws-sam-java-rest-1.0.0.jar
-      Handler: com.amazonaws.handler.UpdateOrderHandler::handleRequest
+      Handler: com.amazon.handler.UpdateOrderHandler::handleRequest
       Runtime: java8
       Policies:
         - DynamoDBCrudPolicy:
@@ -65,7 +65,7 @@ Resources:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: target/aws-sam-java-rest-1.0.0.jar
-      Handler: com.amazonaws.handler.DeleteOrderHandler::handleRequest
+      Handler: com.amazon.handler.DeleteOrderHandler::handleRequest
       Runtime: java8
       Policies:
         - DynamoDBCrudPolicy:
@@ -80,7 +80,7 @@ Resources:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: target/aws-sam-java-rest-1.0.0.jar
-      Handler: com.amazonaws.handler.CreateOrderHandler::handleRequest
+      Handler: com.amazon.handler.CreateOrderHandler::handleRequest
       Runtime: java8
       Policies:
         - DynamoDBCrudPolicy:
@@ -91,6 +91,22 @@ Resources:
           Properties:
             Path: /orders
             Method: post
+
+  HelloWorldFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: target/aws-sam-java-rest-1.0.0.jar
+      Handler: com.amazon.handler.HelloWorldHandler::handleRequest
+      Runtime: java8
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref OrdersTable
+      Events:
+        SayHello:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /hello
+            Method: get
 
   OrdersTable:
     Type: AWS::DynamoDB::Table
@@ -107,7 +123,7 @@ Resources:
 Outputs:
     HelloWorldApi:
       Description: "API Gateway endpoint URL for Prod stage for Hello World function"
-      Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
+      Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazon.com/Prod/hello/"
 
     GetOrderFunction:
       Description: "GetOrder Lambda Function ARN"

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="46" failures="0" name="com.amazonaws.dao.OrderDaoTest" time="1.719" errors="0" skipped="0">
+<testsuite tests="46" failures="0" name="com.amazonaws.dao.OrderDaoTest" time="1.622" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="14.0.1+7"/>
     <property name="sun.boot.library.path" value="C:\Users\prakh\.jdks\openjdk-14.0.1\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\prakh\lamda-template"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\prakh\IdeaProjects\lambda-template"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\prakh\lamda-template"/>
+    <property name="user.dir" value="C:\Users\prakh\IdeaProjects\lambda-template"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="14.0.1+7"/>
     <property name="os.arch" value="amd64"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.1\plugins\maven\lib\maven3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="14"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
     <property name="java.home" value="C:\Users\prakh\.jdks\openjdk-14.0.1"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -60,50 +60,50 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenVersionNull_throwsIllegalArgumentException" time="0.184"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenVersionNull_throwsIllegalArgumentException" time="0.124"/>
   <testcase classname="com.amazonaws.dao.OrderDaoTest" name="createOrder_whenRequestNull_throwsIllegalArgumentException" time="0"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrders_whenTableNotEmpty_butLastEvaluatedKeyHasOrderIdSetToUnsetAv_throwsIllegalStateException" time="0.713"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithUnsetPreTaxAV_throwsIllegalStateException" time="0.098"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenTableDoesNotExist_throwsTableDoesNotExistException" time="0.15"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithUnsetPostTaxAV_throwsIllegalStateException" time="0.01"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithUnsetOrderIdAV_throwsIllegalStateException" time="0.003"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="deleteOrder_whenDeleteItemReturnsNull_throwsIllegalStateException" time="0.045"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenTableDoesNotExist_throwsTableDoesNotExistException" time="0.005"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrders_whenTableNotEmpty_returnsPage" time="0.005"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrders_whenTableNotEmpty_butLastEvaluatedKeyHasOrderIdSetToUnsetAv_throwsIllegalStateException" time="0.367"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithUnsetPreTaxAV_throwsIllegalStateException" time="0.115"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenTableDoesNotExist_throwsTableDoesNotExistException" time="0.225"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithUnsetPostTaxAV_throwsIllegalStateException" time="0.016"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithUnsetOrderIdAV_throwsIllegalStateException" time="0.002"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="deleteOrder_whenDeleteItemReturnsNull_throwsIllegalStateException" time="0.028"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenTableDoesNotExist_throwsTableDoesNotExistException" time="0.002"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrders_whenTableNotEmpty_returnsPage" time="0.002"/>
   <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithVersionOfWrongType_throwsIllegalStateException" time="0.005"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenPreTaxAmountNull_throwsIllegalArgumentException" time="0.001"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenPreTaxAmountNull_throwsIllegalArgumentException" time="0.003"/>
   <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrders_whenTableDoesNotExist_throwsTableDoesNotExistException" time="0.002"/>
   <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenPostTaxAmountNull_throwsIllegalArgumentException" time="0"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenOrderExists_returnsOrder" time="0.004"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithInvalidPostTax_throwsIllegalStateException" time="0.003"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenTableDoesNotExistOnLoadItem_throwsTableDoesNotExistException" time="0.003"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenOrderExists_returnsOrder" time="0.005"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithInvalidPostTax_throwsIllegalStateException" time="0.002"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenTableDoesNotExistOnLoadItem_throwsTableDoesNotExistException" time="0.006"/>
   <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenAllNotSet_throwsIllegalArgumentException" time="0.001"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrders_whenTableNotEmpty_butLastEvaluatedKeyHasOrderIdSetToEmptyString_throwsIllegalStateException" time="0.002"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="createOrder_whenOrderDoesNotExist_createsOrderWithPopulatedOrderId" time="0.377"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithUnsetVersionAV_throwsIllegalStateException" time="0.002"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrders_whenTableNotEmpty_butLastEvaluatedKeyHasOrderIdSetToEmptyString_throwsIllegalStateException" time="0.014"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="createOrder_whenOrderDoesNotExist_createsOrderWithPopulatedOrderId" time="0.527"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithUnsetVersionAV_throwsIllegalStateException" time="0.003"/>
   <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithInvalidVersion_throwsIllegalStateException" time="0.002"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithEmptyCustomerId_throwsIllegalStateException" time="0.002"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="createOrder_whenAlreadyExists_throwsCouldNotCreateOrderException" time="0.029"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenOrderIdSetButEmpty_throwsIllegalArgumentException" time="0"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="deleteOrder_whenTableDoesNotExist_throwsTableDoesNotExistException" time="0.004"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="deleteOrder_whenDeleteItemReturnsOkOrderItem_returnsDeletedOrder" time="0.007"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithUnsetCustomerIdAV_throwsIllegalStateException" time="0.002"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithPreTaxWrongType_throwsIllegalStateException" time="0.005"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithEmptyCustomerId_throwsIllegalStateException" time="0.006"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="createOrder_whenAlreadyExists_throwsCouldNotCreateOrderException" time="0.064"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenOrderIdSetButEmpty_throwsIllegalArgumentException" time="0.001"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="deleteOrder_whenTableDoesNotExist_throwsTableDoesNotExistException" time="0.005"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="deleteOrder_whenDeleteItemReturnsOkOrderItem_returnsDeletedOrder" time="0.015"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithUnsetCustomerIdAV_throwsIllegalStateException" time="0.003"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithPreTaxWrongType_throwsIllegalStateException" time="0.003"/>
   <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrders_whenTableEmpty_returnsEmptyPage" time="0.002"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenAllSet_returnsUpdate" time="0.012"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithEmptyOrderId_throwsIllegalStateException" time="0.002"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="createOrder_whenTableDoesNotExist_throwsTableDoesNotExistException" time="0.007"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsEmptyHashMap_throwsIllegalStateException" time="0.003"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenAllSet_returnsUpdate" time="0.027"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithEmptyOrderId_throwsIllegalStateException" time="0.003"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="createOrder_whenTableDoesNotExist_throwsTableDoesNotExistException" time="0.003"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsEmptyHashMap_throwsIllegalStateException" time="0.005"/>
   <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithInvalidPreTax_throwsIllegalStateException" time="0.003"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="deleteOrder_whenVersionMismatch_throwsUnableToDeleteException" time="0.002"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="deleteOrder_whenVersionMismatch_throwsUnableToDeleteException" time="0.003"/>
   <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenVersionMismatch_throwsUnableToUpdateException" time="0.006"/>
   <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithPostTaxWrongType_throwsIllegalStateException" time="0.003"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="deleteOrder_whenDeleteItemReturnsEmptyAttributes_throwsIllegalStateException" time="0.002"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithOrderIdWrongType_throwsIllegalStateException" time="0.003"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenOrderIsNull_throwsIllegalArgumentException" time="0.001"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithCustomerIdWrongType_throwsIllegalStateException" time="0.002"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenOrderDoesNotExist_throwsOrderDoesNotExist" time="0.003"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="deleteOrder_whenDeleteItemReturnsEmptyAttributes_throwsIllegalStateException" time="0"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithOrderIdWrongType_throwsIllegalStateException" time="0.004"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenOrderIsNull_throwsIllegalArgumentException" time="0.002"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenGetItemReturnsHashMapWithCustomerIdWrongType_throwsIllegalStateException" time="0.01"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrder_whenOrderDoesNotExist_throwsOrderDoesNotExist" time="0"/>
   <testcase classname="com.amazonaws.dao.OrderDaoTest" name="updateOrder_whenCustomerIdSetButEmpty_throwsIllegalArgumentException" time="0"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="deleteOrder_whenDeleteItemReturnsNoAttributes_throwsIllegalStateException" time="0.002"/>
-  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrders_whenTableNotEmpty_butLastEvaluatedKeyHasOrderIdSetToWrongType_throwsIllegalStateException" time="0.002"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="deleteOrder_whenDeleteItemReturnsNoAttributes_throwsIllegalStateException" time="0"/>
+  <testcase classname="com.amazonaws.dao.OrderDaoTest" name="getOrders_whenTableNotEmpty_butLastEvaluatedKeyHasOrderIdSetToWrongType_throwsIllegalStateException" time="0.003"/>
 </testsuite>

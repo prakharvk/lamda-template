@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.amazonaws.handler.CreateOrderHandlerTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.246 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 41.151 sec

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="com.amazonaws.handler.CreateOrderHandlerTest" time="0.796" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="com.amazonaws.handler.CreateOrderHandlerTest" time="1.313" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="14.0.1+7"/>
     <property name="sun.boot.library.path" value="C:\Users\prakh\.jdks\openjdk-14.0.1\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\prakh\lamda-template"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\prakh\IdeaProjects\lambda-template"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\prakh\lamda-template"/>
+    <property name="user.dir" value="C:\Users\prakh\IdeaProjects\lambda-template"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="14.0.1+7"/>
     <property name="os.arch" value="amd64"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.1\plugins\maven\lib\maven3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="14"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
     <property name="java.home" value="C:\Users\prakh\.jdks\openjdk-14.0.1"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -60,11 +60,11 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamDoesNotHavePostTaxAmount_puts400InOutputStream" time="0.667"/>
-  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamEmpty_puts400InOutputStream" time="0.017"/>
-  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamOnlyHasCustomer_puts400InOutputStream" time="0.029"/>
-  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamHasNoBody_puts400InOutputStream" time="0.013"/>
-  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamHasEmptyBodyDict_puts400InOutputStream" time="0.016"/>
-  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamHasNullBody_puts400InOutputStream" time="0.029"/>
-  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamHasWrongTypeForBody_puts400InOutputStream" time="0.025"/>
+  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamDoesNotHavePostTaxAmount_puts400InOutputStream" time="1.164"/>
+  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamEmpty_puts400InOutputStream" time="0.022"/>
+  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamOnlyHasCustomer_puts400InOutputStream" time="0.016"/>
+  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamHasNoBody_puts400InOutputStream" time="0.014"/>
+  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamHasEmptyBodyDict_puts400InOutputStream" time="0.024"/>
+  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamHasNullBody_puts400InOutputStream" time="0.03"/>
+  <testcase classname="com.amazonaws.handler.CreateOrderHandlerTest" name="handleRequest_whenCreateOrderInputStreamHasWrongTypeForBody_puts400InOutputStream" time="0.043"/>
 </testsuite>

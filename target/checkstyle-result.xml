@@ -1,3 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="6.18">
+<file name="C:\Users\prakh\IdeaProjects\lambda-template\src\main\java\com\amazon\dao\OrderDao.java">
+<error line="22" severity="warning" message="Wrong lexicographical order for &apos;com.amazon.exception.CouldNotCreateOrderException&apos; import. Should be before &apos;com.amazon.model.OrderPage&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="23" severity="warning" message="Wrong lexicographical order for &apos;com.amazon.exception.OrderDoesNotExistException&apos; import. Should be before &apos;com.amazon.model.OrderPage&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="24" severity="warning" message="Wrong lexicographical order for &apos;com.amazon.exception.TableDoesNotExistException&apos; import. Should be before &apos;com.amazon.model.OrderPage&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="25" severity="warning" message="Wrong lexicographical order for &apos;com.amazon.exception.UnableToDeleteException&apos; import. Should be before &apos;com.amazon.model.OrderPage&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="26" severity="warning" message="Wrong lexicographical order for &apos;com.amazon.exception.UnableToUpdateException&apos; import. Should be before &apos;com.amazon.model.OrderPage&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+</file>
+<file name="C:\Users\prakh\IdeaProjects\lambda-template\src\main\java\com\amazon\handler\CreateOrderHandler.java">
+<error line="24" severity="warning" message="Wrong lexicographical order for &apos;com.amazon.config.OrderComponent&apos; import. Should be before &apos;com.amazon.model.Order&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+</file>
+<file name="C:\Users\prakh\IdeaProjects\lambda-template\src\main\java\com\amazon\handler\DeleteOrderHandler.java">
+<error line="24" severity="warning" message="Wrong lexicographical order for &apos;com.amazon.config.OrderComponent&apos; import. Should be before &apos;com.amazon.exception.UnableToDeleteException&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+</file>
+<file name="C:\Users\prakh\IdeaProjects\lambda-template\src\main\java\com\amazon\handler\GatewayResponse.java">
+<error line="17" severity="warning" message="Line is longer than 100 characters (found 104)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="17" column="5" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="C:\Users\prakh\IdeaProjects\lambda-template\src\main\java\com\amazon\handler\GetOrderHandler.java">
+<error line="24" severity="warning" message="Wrong lexicographical order for &apos;com.amazon.config.OrderComponent&apos; import. Should be before &apos;com.amazon.model.Order&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+</file>
+<file name="C:\Users\prakh\IdeaProjects\lambda-template\src\main\java\com\amazon\handler\GetOrdersHandler.java">
+<error line="23" severity="warning" message="Wrong lexicographical order for &apos;com.amazon.config.OrderComponent&apos; import. Should be before &apos;com.amazon.model.OrderPage&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="25" severity="warning" message="Wrong lexicographical order for &apos;com.amazon.model.response.GetOrdersResponse&apos; import. Should be before &apos;com.amazonaws.model.response.GatewayResponse&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+</file>
+<file name="C:\Users\prakh\IdeaProjects\lambda-template\src\main\java\com\amazon\handler\HelloWorldHandler.java">
+<error line="5" severity="warning" message="Wrong lexicographical order for &apos;java.io.IOException&apos; import. Should be before &apos;java.io.InputStreamReader&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="11" severity="warning" message="Import statement for &apos;com.amazonaws.services.lambda.runtime.Context&apos; is in the wrong order. Should be in the &apos;THIRD_PARTY_PACKAGE&apos; group, expecting not assigned imports on this line." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="12" severity="warning" message="Import statement for &apos;com.amazonaws.services.lambda.runtime.RequestHandler&apos; is in the wrong order. Should be in the &apos;THIRD_PARTY_PACKAGE&apos; group, expecting not assigned imports on this line." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="19" column="5" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="25" severity="warning" message="Line is longer than 100 characters (found 114)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="32" column="70" severity="warning" message="WhitespaceAround: &apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="34" column="12" severity="warning" message="WhitespaceAround: &apos;try&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+<file name="C:\Users\prakh\IdeaProjects\lambda-template\src\main\java\com\amazon\handler\UpdateOrderHandler.java">
+<error line="26" severity="warning" message="Wrong lexicographical order for &apos;com.amazon.config.OrderComponent&apos; import. Should be before &apos;com.amazon.model.request.UpdateOrderRequest&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+</file>
 </checkstyle>

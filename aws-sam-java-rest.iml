@@ -60,6 +60,5 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.amazonaws:aws-java-sdk-core:1.11.380" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: joda-time:joda-time:2.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.amazonaws:jmespath-java:1.11.380" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.7.30" level="project" />
   </component>
 </module>
